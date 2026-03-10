@@ -23,18 +23,16 @@
 
         $first_sentence = "Hello PHP!" ; // Panjang string 10, jumlah kata: 2
         $second_sentence = "I'm ready for the challenges"; // Panjang string: 28,  jumlah kata: 5
-        echo "Kalimat: \"$first_sentence\" <br>";
+        echo "Kalimat Pertama: \"$first_sentence\" <br>";
         echo "Panjang string: " . strlen($first_sentence) . "<br>"; 
         echo "Jumlah kata: " . str_word_count($first_sentence) . "<br>". "<br>";
-        echo "Kalimat: \"$second_sentence\" <br>";
+        echo "Kalimat Kedua: \"$second_sentence\" <br>";
         echo "Panjang string: " . strlen($second_sentence) . "<br>";
         echo "Jumlah kata: " . str_word_count($second_sentence) . "<br>";
         echo "<h3> Soal No 2</h3>";
         /* 
             SOAL NO 2
             Mengambil kata pada string dan karakter-karakter yang ada di dalamnya. 
-            
-            
         */
         $string2 = "I love PHP";
         
@@ -50,7 +48,8 @@
             Mengubah karakter atau kata yang ada di dalam sebuah string.
         */
         $string3 = "PHP is old but sexy!";
-        echo "String : \"" . str_replace("sexy", "awesome", $string3) . "\" <br>";
+        echo "Kalimat Asli: \"$string3\" <br>";
+        echo "Kalimat Pengganti: \"" . str_replace("sexy", "awesome", $string3) . "\" <br>";
         // OUTPUT : "PHP is old but awesome"
 
     ?>
