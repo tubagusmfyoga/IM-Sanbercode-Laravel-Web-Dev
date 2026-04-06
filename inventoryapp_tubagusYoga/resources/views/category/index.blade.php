@@ -30,7 +30,7 @@ Tampil Category
             @method('DELETE')
             <a href="/category/{{$item->id}}" class="btn btn-info btn-sm">Detail</a>
         <a href="/category/{{$item->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-            <input type="submit" class="btn btn-danger btn-sm" value="Delete">
+            <input type="submit" class="btn btn-danger btn-sm" value="Delete"> 
         </form>
       </td>
     </tr>

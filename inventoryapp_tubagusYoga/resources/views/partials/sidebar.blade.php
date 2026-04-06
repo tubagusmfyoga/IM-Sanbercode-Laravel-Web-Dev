@@ -35,6 +35,12 @@
                 </span>
                 <span class="hide-menu">Category</span>
               </a>
+              <a class="sidebar-link" href="/product" aria-expanded="false">
+                <span>
+                  <iconify-icon icon="solar:layers-minimalistic-bold-duotone" class="fs-6"></iconify-icon>
+                </span>
+                <span class="hide-menu">Product</span>
+              </a>
             </li>
           </ul>
         </nav>
