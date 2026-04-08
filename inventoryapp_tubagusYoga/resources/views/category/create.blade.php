@@ -1,12 +1,8 @@
 @extends('layouts.master')
-@section('title', 'Welcome')
-@section('judul',)
+@section('judul')
 Tambah Category
 @endsection
 @section('content')
-<form action="/category" method="POST">
-    @csrf
-
     @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -16,6 +12,8 @@ Tambah Category
         </ul>
     </div>
     @endif
+<form action="/category" method="POST">
+    @csrf
   <div class="mb-3">
     <label class="form-label">Name</label>
     <input type="text" class="form-control" name="name">

@@ -1,5 +1,4 @@
 @extends('layouts.master')
-@section('title', 'Welcome')
 @section('judul',)
 Edit Category
 @endsection

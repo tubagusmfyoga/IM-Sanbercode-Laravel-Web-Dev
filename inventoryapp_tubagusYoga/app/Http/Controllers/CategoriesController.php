@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use App\Models\Categories;
 
 class CategoriesController extends Controller
 {
@@ -38,7 +39,7 @@ class CategoriesController extends Controller
     }
 
     public function show($id){
-        $category = DB::table('categories')->find($id);
+        $category = Categories::find($id);
         return view('category.detail', ['category' => $category]);
     }
 

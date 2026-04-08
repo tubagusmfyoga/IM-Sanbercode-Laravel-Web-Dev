@@ -1,16 +1,15 @@
 @extends('layouts.master')
-@section('title')
+@section('judul')
 Tampil Category
 @endsection
 @section('content')
-
-<a href="/category/create" class="btn btn-primary btn-sm btn-lg my-2">Tambah</a>
 
 @if (session('success'))
     <div class="alert alert-success">
         {{ session('success') }}
     </div>
 @endif
+<a href="/category/create" class="btn btn-primary btn-sm btn-lg my-2">Tambah</a>
 <table class="table">
   <thead>
     <tr>
@@ -37,6 +36,7 @@ Tampil Category
     @empty
     <tr>
         <td colspan="3" class="text-center">Data Category Masih Kosong</td>
+    </tr>
         
     @endforelse
   </tbody>

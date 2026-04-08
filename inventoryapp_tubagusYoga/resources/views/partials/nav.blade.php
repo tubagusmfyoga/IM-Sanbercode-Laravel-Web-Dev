@@ -9,11 +9,22 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                    <a href="/profile" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
                       <p class="mb-0 fs-3">My Profile</p>
                     </a>
-                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                    @auth
+                      <form action="/logout" method="POST" class="d-inline">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
+                      </form>
+                    @else
+                    <form action="/login" method="GET" class="d-inline">
+                      @csrf
+                      <button type="submit" class="btn btn-outline-primary mx-3 mt-2 d-block">Login</button>
+                    </form>   
+                    @endauth
+                    
                   </div>
                 </div>
               </li>
